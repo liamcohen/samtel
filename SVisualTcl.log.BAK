@@ -1,0 +1,22 @@
+load_file /afs/athena.mit.edu/user/l/c/lc2017/Desktop/samtel/mosfet_30nm_ldd_def.plt
+create_plot -1d
+select_plots {Plot_1}
+#-> Plot_1
+#-> Plot_1
+#-> mosfet_30nm_ldd_def
+create_curve -plot Plot_1 -dataset {mosfet_30nm_ldd_def} -axisX "Gate_contact OuterVoltage" -axisY "Drain_contact TotalCurrent"
+#-> Curve_1
+calculate Curve_1 -op Vth -plot Plot_1
+# Vth: 0.500064
+#-> 0.500064
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 1.1
+zoom_plot -plot Plot_1 -factor 0.9
+zoom_plot -plot Plot_1 -factor 0.9
+export_curves {Curve_1} -plot Plot_1 -filename "/afs/athena.mit.edu/user/l/c/lc2017/Desktop/samtel/Ids-Vgs-30nm-ldd-Vdd18.csv" -format CSV
+#-> /afs/athena.mit.edu/user/l/c/lc2017/Desktop/samtel/Ids-Vgs-30nm-ldd-Vdd18.csv

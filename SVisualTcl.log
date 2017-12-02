@@ -1,0 +1,13 @@
+load_file /afs/athena.mit.edu/user/l/c/lc2017/Desktop/samtel/bitchin_transistor_2_def.plt
+create_plot -1d
+select_plots {Plot_1}
+#-> Plot_1
+#-> Plot_1
+#-> bitchin_transistor_2_def
+create_curve -plot Plot_1 -dataset {bitchin_transistor_2_def} -axisX "Gate_contact OuterVoltage" -axisY "Drain_contact TotalCurrent"
+#-> Curve_1
+calculate Curve_1 -op Vth -plot Plot_1
+# Vth: 0.947638
+#-> 0.947638
+export_curves {Curve_1} -plot Plot_1 -filename "/afs/athena.mit.edu/user/l/c/lc2017/Desktop/samtel/Ids-Vgs-30nm-ldd-halo-Vdd18.csv" -format CSV
+#-> /afs/athena.mit.edu/user/l/c/lc2017/Desktop/samtel/Ids-Vgs-30nm-ldd-halo-Vdd18.csv

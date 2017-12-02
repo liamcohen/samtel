@@ -1,10 +1,10 @@
 File {
 * The File section defines the input and output files of the simulation
 * Input Files
-Grid = "example_msh.tdr" 
-Current = "example_def.plt" 
-Plot = "example_def.tdr" 
-Output = "example_def.log" 
+Grid = "bitchin_transistor_2_msh.tdr" 
+Current = "bitchin_transistor_2_def.plt" 
+Plot = "bitchin_transistor_2_def.tdr" 
+Output = "bitchin_transistor_2_def.log" 
 }
 Electrode {
 { Name="Drain_contact" Voltage=1.8 } * CHANGE THIS TO SET VDD

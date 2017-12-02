@@ -1,10 +1,10 @@
 File {
 * The File section defines the input and output files of the simulation
 * Input Files
-Grid = "basic_mosfet_msh.tdr" 
-Current = "basic_mosfet_def.plt" 
-Plot = "basic_mosfet_def.tdr" 
-Output = "basic_mosfet_def.log" 
+Grid = "bitchin_transistor_2_msh.tdr" 
+Current = "bitchin_transistor_2_def.plt" 
+Plot = "bitchin_transistor_2_def.tdr" 
+Output = "bitchin_transistor_2_def.log" 
 }
 Electrode {
 { Name="Drain_contact" Voltage=1.8 } * CHANGE THIS TO SET VDD
